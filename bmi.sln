@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bmi", "csharp\bmi.csproj", "{79D3C918-7A75-40A7-B1E4-F040D72EF0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bmi-test", "xunit\bmi-test.csproj", "{3B323774-A8E1-413A-ADD8-F0D5C833ACB3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "bmi-func", "fsharp\bmi-func.fsproj", "{E73A8F61-CC44-4A5D-A3B1-DC6B7F605F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79D3C918-7A75-40A7-B1E4-F040D72EF0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D3C918-7A75-40A7-B1E4-F040D72EF0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D3C918-7A75-40A7-B1E4-F040D72EF0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D3C918-7A75-40A7-B1E4-F040D72EF0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B323774-A8E1-413A-ADD8-F0D5C833ACB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B323774-A8E1-413A-ADD8-F0D5C833ACB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B323774-A8E1-413A-ADD8-F0D5C833ACB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B323774-A8E1-413A-ADD8-F0D5C833ACB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73A8F61-CC44-4A5D-A3B1-DC6B7F605F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73A8F61-CC44-4A5D-A3B1-DC6B7F605F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73A8F61-CC44-4A5D-A3B1-DC6B7F605F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73A8F61-CC44-4A5D-A3B1-DC6B7F605F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

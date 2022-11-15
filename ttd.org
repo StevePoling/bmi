@@ -1,0 +1,21 @@
+- Generate .NET CSharp console app
+  dotnet new --list
+  dotnet new --search
+  dotnet new console -h
+  dotnet new console --language "F#" -h
+
+  dotnet new console --language "C#" --name bmi -o ./csharp
+  dotnet new console --language "F#" --name bmi-func -o ./fsharp
+  dotnet new xunit --language "C#" --name bmi-test -o ./xunit
+  dotnet new sln -o ./bmi
+  dotnet sln bmi.sln add xunit/bmi-test.csproj
+  dotnet sln bmi.sln add fsharp/bmi-func.fsproj
+  dotnet build
+
+- Make it a pure function to compute BMI
+- Function lbs2kgs
+  Function feetAndInches2meters
+  Function squared
+  Function get input
+  Function put output
+  
