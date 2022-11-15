@@ -22,3 +22,5 @@ At the moment .NET Core (or whatever .NET 7.0.0 calls itself) is running on MacO
 I wonder how one does a project that runs on both WSL and its host OS... 
 
 So much to learn.
+
+e.g. romancing github
