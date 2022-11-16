@@ -1,4 +1,4 @@
-﻿public class bmi
+﻿public class Bmi
 {
   public static (double,double) ParseMetric(string line)
   {
