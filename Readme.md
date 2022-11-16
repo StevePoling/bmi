@@ -23,6 +23,32 @@ Windoze works with GCM which is not as cross-platform as one might like. So they
 
 Easiest way for me to change the remote url was just to edit .git/config. There's probably git command to switch it around I haven't gotten around to learning.
 
+## Raspberry PI
+
+Dotnet does not have an installer targeted for Raspberry PI OS. So, we do it like this:
+
+```zsh
+curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current
+ls ~/.dotnet
+emacs ~/.zshrc
+source ~/.zshrc
+dotnet --version
+```
+
+Note that the install script puts dotnet into ~/.dotnet. Thus I have to edit .zshrc to add it to the path before I can run dotnet.
+
+And you'll want to make sure the github authentication stuff is done.
+
+```zsh
+ssh-keygen -t ed25519 -C "user@computer" -f key-pair
+cat key-pair.pub
+emacs ~/.zshrc
+```
+
+Generate an ssh key-pair
+Give its public key to github.com
+Add the private key to ssh-agent.
+
 ## Things unfinished
 
 ### F# Implementation & Tests
