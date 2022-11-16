@@ -19,3 +19,29 @@
   Function get input
   Function put output
   
+- Create git repo
+  git init
+  git add ...stuff...
+  git status
+  git commit -m "Initial check-in"
+
+- Goto https://github.com and create my bmi repo
+  Verify ssh is working
+  ssh -vT git@github.com
+
+  git remote add origin git@github.com:StevePoling/bmi.git
+  git branch -M main
+  git push -u origin main
+
+- (Maybe) Fix remote URL
+  emacs .git/config
+  git push --set-upstream origin main
+
+  git pull
+  git branch -v
+  git branch -M main
+  git remote add origin git@github.com:StevePoling/bmi.git
+  git push -u origin main
+
+- Note that Windows GCM is broken for ssh
+  git remote add origin https://github.com/StevePoling/bmi.git

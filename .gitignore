@@ -6,3 +6,4 @@ xunit/bin/*
 xunit/obj/*
 .vs/*
 .vs
+.fake
