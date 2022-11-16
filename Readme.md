@@ -35,7 +35,14 @@ source ~/.zshrc
 dotnet --version
 ```
 
-Note that the install script puts dotnet into ~/.dotnet. Thus I have to edit .zshrc to add it to the path before I can run dotnet.
+Note that the install script puts dotnet into ~/.dotnet. Thus I have
+to edit .zshrc to add it to the path before I can run dotnet.
+
+Something similar can be said about Ubuntu. Sure, there's a 6.0
+package you can get via apt-get. But that dotnet installer works for
+Ubuntu as well. However, if you've got an old-stale .NET 6.0 already
+installed, you'll have to manually start sudo rm-ing all the paths
+that come up when you do whereis dotnet.
 
 And you'll want to make sure the github authentication stuff is done.
 
