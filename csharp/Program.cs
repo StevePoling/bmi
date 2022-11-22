@@ -83,6 +83,6 @@
   {
     var inputs = GetInputs(argv, GetLineFromConsole, "Enter your weight [and height]: ");
     var bmi_value = BmiCalc(inputs);
-    Console.WriteLine($"Height: {inputs.Item1} Weight: {inputs.Item2} BMI: {bmi_value};");
+    Console.WriteLine($"Height: {inputs.Item1}m Weight: {inputs.Item2}kg BMI: {bmi_value};");
   }
 }
