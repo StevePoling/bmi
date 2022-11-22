@@ -18,6 +18,27 @@
       "stopAtEntry": false
     },
     {
+      "name": ".NET Core Remote Launch - Raspberry Pi (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "args": [
+          "./bmi.dll"
+      ],
+      "cwd": "~/Projects/bmi/csharp/bin/Debug/net7.0",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "pipeTransport": {
+          "pipeCwd": "${workspaceRoot}",
+          "pipeProgram": "/usr/bin/ssh",
+          "pipeArgs": [
+              "-T", "-i", "gold-macbook",
+              "pi@raspi-lr.local"
+          ],
+          "debuggerPath": "~/vsdbg/vsdbg"
+          }
+    },    
+    {
       "name": ".NET Core Attach",
       "type": "coreclr",
       "request": "attach"
