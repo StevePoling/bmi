@@ -2,9 +2,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      // Use IntelliSense to find out which attributes exist for C# debugging
-      // Use hover for the description of the existing attributes
-      // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
       "name": ".NET Core Launch (console)",
       "type": "coreclr",
       "request": "launch",
@@ -13,7 +10,6 @@
       "program": "${workspaceFolder}/csharp/bin/Debug/net7.0/bmi.dll",
       "args": ["210.6", "6"],
       "cwd": "${workspaceFolder}/csharp",
-      // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "internalConsole",
       "stopAtEntry": false
     },
@@ -22,19 +18,14 @@
       "type": "coreclr",
       "request": "launch",
       "program": "dotnet",
-      "args": [
-          "./bmi.dll"
-      ],
+      "args": [ "./bmi.dll" ],
       "cwd": "~/Projects/bmi/csharp/bin/Debug/net7.0",
       "stopAtEntry": false,
       "console": "internalConsole",
       "pipeTransport": {
           "pipeCwd": "${workspaceRoot}",
           "pipeProgram": "/usr/bin/ssh",
-          "pipeArgs": [
-              "-T", "-i", "gold-macbook",
-              "pi@raspi-lr.local"
-          ],
+          "pipeArgs": [ "-T", "-i", "gold-macbook", "pi@raspi-lr.local" ],
           "debuggerPath": "~/vsdbg/vsdbg"
           }
     },    
